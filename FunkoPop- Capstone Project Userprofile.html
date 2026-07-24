@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="FunkoPop- Capstone Project.css">
+    <script src="FunkoPop-Capstone Project.js" defer></script>
+    <meta charset="utf-8">
+    <img src="FunkoPop Trading Near You Logo.png" alt="FunkoPop Trading Logo" width="100%" height="250">
+    <title>FunkoPop Trading Near You- User Profile</title>
+</head>
+<body>
+    <div class="uBio">
+     <div class="profilePic">
+        <img src="c:\Users\keily\OneDrive\Desktop\COSC 498- Capstone Project\userprofileImg.jpg"
+            alt="temporaryUserProfile"
+            class="temporaryProfilePic"
+            id="profileDisplay" >
+            
+        <label for="imageUpload" class="uploadLabel">+</label>
+        <input type="file" id="imageUpload" class="fileInput" accept="image/*" onchange="previewImageEvent">
+            <h3>User Name</h3>
+    </div>   
+    <label for="userBio">User Bio:</label>
+    <textarea id="userBio" name="Bio" cols="55" placeholder="Write bio here!" maxlength="400"></textarea>
+    </div>
+    <!--google.com-->
+    <script>
+    function previewImageEvent {
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                document.getElementById('profileDisplay').src = e.target.result;
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+</script>
+<!--chatGPT-->
+</body>
+</html>

@@ -1,0 +1,71 @@
+.ManipulateButton {
+    display: flex;
+    justify-content: left;
+    gap: 15px;
+    padding-left: 50px;
+}
+
+p {
+    padding-left: 30px;
+}
+
+p1 {
+    padding-left: 132px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.CreateUserNameContainer {
+    display: flex;
+    align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.CreatePasswordContainer {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.EnterBirthDate {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.EnterAge {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.UserEmail {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.ParentalEmail {
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.BO {
+       padding-left: 475px;
+    }
+
+.temporaryProfilePic {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+
+.uBio {
+    display: flex;
+}

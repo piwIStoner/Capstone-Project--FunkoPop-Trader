@@ -3,16 +3,29 @@
 <head>
     <link rel="stylesheet" href="FunkoPop- Capstone Project.css">
     <script src="FunkoPop-Capstone Project.js" defer></script>
+    <script src="FunkoPopServer.js" defer></script>
     <meta charset="utf-8">
     <img src="FunkoPop Trading Near You Logo.png" alt="FunkoPop Trading Logo" width="100%" height="250">
     <title>FunkoPop Trading Near You- Create New User</title>
 </head>
 <body>
 <h2>Create New User</h2>
+<form id="registerForm">
 <div class="CreateUserNameContainer">
     <label for="CreateUserName">Create Username:</label>
     <input type="text" id="InputUserName" name="Username" placeholder="JohnDoe123">
 </div>
+<!--Google-->
+<script>
+    const createNewUser = document.getElementById('createNewUser');
+
+    createNewUser.addEventListener('click', function() {
+        const inputName = document.getElementById('InputUserName').value;
+        localStorage.setItem('sharedData', inputName);
+        window.location.href = 'file:///C:/Users/keily/OneDrive/Desktop/COSC%20498-%20Capstone%20Project/FunkoPop-%20Capstone%20Project%20Userprofile.HTML';
+    });
+</script>
+<!--google-->
 <br>
 <div class="CreatePasswordContainer">
     <label for="CreatePassword">Create Password:</label>
@@ -53,8 +66,10 @@
 <!--chatGPT-->
 <br>
 <div class="BO">
-    <button type="submit" onclick="window.location.href='file:///C:/Users/keily/OneDrive/Desktop/COSC%20498-%20Capstone%20Project/FunkoPop-%20Capstone%20Project%20Userprofile.HTML'">
+    <button type="submit" id="createNewUser">
         Submit
     </button>
+</div>
+</form>
 </body>
 </html>

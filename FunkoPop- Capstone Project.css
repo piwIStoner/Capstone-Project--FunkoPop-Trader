@@ -69,3 +69,31 @@ h2 {
 .uBio {
     display: flex;
 }
+
+.bioButton {
+    padding-left: 887px;
+}
+
+hr.divider {
+    border: none;
+    height: 5px;
+    background-color: #3498db;
+    border-radius: 5px;
+}
+
+ul.funkoList {
+    display: flex;
+    list-style-type: none;
+    gap: 100px;
+    font-weight: bold;
+}
+
+.showAll {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.tradeableShowAll {
+    display: flex;
+    justify-content: flex-end;
+}

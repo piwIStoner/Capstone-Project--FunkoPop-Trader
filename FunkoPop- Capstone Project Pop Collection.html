@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="FunkoPop- Capstone Project.css">
+    <script src="FunkoPop-Capstone Project.js" defer></script>
+    <script src="FunkoPopServer.js" defer></script>
+    <meta charset="utf-8">
+    <img src="FunkoPop Trading Near You Logo.png" alt="FunkoPop Trading Logo" width="100%" height="250">
+    <title>FunkoPop Trading Near You- User Profile</title>
+</head>
+<body>
+<u><h3 style="text-align: center;">Tradeable Pops & Collection</h3></u>
+<div>
+<ul id="complCol" class="complCol"></ul>
+<hr class="divider">
+</div>
+<script>
+    const savedItems = JSON.parse(localStorage.getItem('savedFunko'));
+    const destinationList = document.getElementById('complCol');
+
+    if (savedItems) {
+        savedItems.forEach(text => {
+            const li = document.createElement('li');
+            li.textContent = text;
+            destinationList.appendChild(li);
+        });
+    }
+</script>
+</body>
+</html>
